@@ -1,0 +1,100 @@
+/* Navbar Styles */
+.navbar-container {
+    width: 100%;
+    background: #00367d;
+    color: #fff;
+    padding: 10px 0;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+/* Desktop Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 20px;
+    font-size: 14px;
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+@media (max-width: 840px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    /* Hide menu by default */
+    .hide-mobile-menu {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        background: #00367d;
+        width: 200px;
+        height: 100vh;
+        padding-top: 70px;
+        transition: right 0.5s ease-in-out;
+    }
+
+    /* Show menu when toggled */
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #00367d;
+        width: 200px;
+        height: 100vh;
+        padding-top: 70px;
+        transition: right 0.5s ease-in-out;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 30px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .hero {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    @media (min-width: 1024px) {
+        .hero {
+            height: 110vh; /* Slightly larger to prevent top cut-off */
+        }
+    }
+    
+}

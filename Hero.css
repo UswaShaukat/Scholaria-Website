@@ -1,0 +1,87 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 54, 125, 0.7), rgba(0, 54, 125, 0.7)), 
+                url('../../assets/Hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px; /* Added padding for small screens */
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+/* Ensure text is readable on smaller screens */
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+/* 🎯 Responsive Media Queries */
+@media (max-width: 1024px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover; /* Ensures full coverage */
+        background-position: center center; /* Keeps focus on main part of image */
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: cover; /* Prevents partitioning issue */
+        background-position: center center;
+        min-height: 80vh;
+    }
+
+    .hero-text {
+        padding: 0 15px; /* Ensures text does not touch edges */
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
