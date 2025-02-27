@@ -1,0 +1,1 @@
+Scholaria is an educational platform dedicated to transforming learning experiences through innovation and accessibility. Built using React.js and Vite, it offers a fast and efficient development environment, ensuring a smooth user experience.![screencapture-localhost-5173-2025-02-26-18_28_04](https://github.com/user-attachments/assets/4958c3df-ac17-443d-b7e5-24425f03ccaf)
